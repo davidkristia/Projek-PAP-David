@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha384-xrRi3gBXUpS/K1X1lSKrOzM/QF8w3vPGAmXfprNInZ9Zc4ke3xtojOfcE2mm1El1"
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="css/tampilan.css">
+        <link rel="stylesheet" href="css/alumni.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-XjzLEJ8tlzUvLr0XT2l9IZxfOuJUZTH7/b7UpWIEa2hddzozKckg1G49iX7lOML2F7uuwq14gpV2wLMRj2/kGg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" /> 
+    <title>Kampus IT DEL</title>
+</head>
+<style>
+  
+</style>
+
+<body>
+    <nav>
+        <div class="logo-container">
+            <img src="image/ITDEL.png" alt="Logo Kampus IT DEL">
+            <div class="logo-text">
+                <h2>Institut Teknologi Del</h2>
+                <p>Martuhan, Marroha, Marbisuk</p>
+            </div>
+        </div>
+
+        <ul>
+            <li><a href="Dashboard.html">Dashboard</a></li>
+            <li><a href="pengunguman.html">Pengumuman</a></li>
+            <li><a href="prodi.html">Program Pendidikan</a></li>
+            <li><a href="fasilitas.html">Fasilitas</a></li>
+            <li><a href="lembaga.html">Lembaga</a></li>
+        </ul>
+
+        <div class="search-bar">
+          <input type="text" id="searchInput" placeholder="Search">
+          <i class="fas fa-search" onclick="performSearch()"></i>
+      </div>
+    </nav>
+
+    <div class="content">
+        
+        
+
+        <div class="carousel"  style=" min-width: 100%;">
+            <link rel="stylesheet" href="css/tampilan.css">
+            <ul class="slides" >
+              <input type="radio" name="radio-buttons" id="img-1" checked />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="image/rektorat.jpg" >
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-3" class="prev-slide">
+                    <span>‹</span>
+                  </label>
+                  <label for="img-2" class="next-slide">
+                    <span>›</span>
+                  </label>
+                </div>
+                
+              </li>
+              <input type="radio" name="radio-buttons" id="img-2" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="image/Kantin.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-1" class="prev-slide">
+                    <span>‹</span>
+                  </label>
+                  <label for="img-3" class="next-slide">
+                    <span>›</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons" id="img-3" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="image/sekitar.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-2" class="prev-slide">
+                    <span>‹</span>
+                  </label>
+                  <label for="img-1" class="next-slide">
+                    <span>›</span>
+                  </label>
+                </div>
+              </li>
+              <div class="carousel-dots">
+                <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+                <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+                <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+              </div>
+            </ul>
+          </div>
+        </div>
+            </div>
+            
+            
+            <div class="latest-news">
+              <div class="news-item">
+                  <h2>Berita Terkini</h2>
+                  <div class="content-container">
+                      <div class="images-container">
+                          <img src="image/ret.jpg" alt="Latest News Image 2">
+                          <img src="image/keasramaan.jpg" alt="Latest News Image 2">
+                          <img src="image/ret.jpg" alt="Latest News Image 3">
+                      </div>
+                      <div class="news-content">
+                        <h2>399 Mahasiswa IT Del Mengikuti Retreat untuk Meningkatkan Karakter 3M (MarTuhan,Marroha,Marbisuk)</h2>
+                          <p>Sebagai bentuk untuk meningkatkan karakter Del yakni 3M (MarTuhan, Marroha, Marbisuk) mahasiswa IT Del angkatan 2021 sebanyak 399 orang melaksanakan retreat dan outbond. Kegiatan ini dilaksanakan dengan 2 gelombang.</p>
+                          <button class="view-more-button">View More Posts</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+          </div>
+          
+                  
+              </div>
+          </div>
+          </div>
+          </div>
+          <div class="custom-box">
+            <h2><i class="fas fa-user-plus"></i> Penerimaan Mahasiswa Baru</h2>
+            <p>Ayo daftarkan dirimu sekarang juga menjadi bagian dari IT DEL.</p>
+            <button class="apply-button"><i class="fas fa-pencil-alt"></i> DAFTAR</button>
+        </div>
+        
+        <hr style="border-width: 2px; font-weight: bold;">
+        
+        <div class="alumni-container">
+          <h1 class="alumni-title">Apa Kata Alumni?</h1>
+
+        <div class="alumni-container">
+          <div class="alumni-box">
+              <div class="alumni-info">
+                  <div class="alumni-row">
+                      <img src="image/alumni 1.jpeg" alt="Alumni Photo 2">
+                      <p class="alumni-quote">"Pendidikan di sini membuka pintu menuju peluang tak terbatas."</p>
+                  </div>
+                  <button class="view-all-btn">View All Alumni Reviews</button>
+              </div>
+          </div>
+      
+          <div class="alumni-box">
+              <div class="alumni-info">
+                  <div class="alumni-row">
+                      <img src="image/alumni 2.jpeg" alt="Alumni Photo 3">
+                      <p class="alumni-quote">"Saya bangga menjadi bagian dari komunitas alumni yang luar biasa."</p>
+                  </div>
+                  <button class="view-all-btn">View All Alumni Reviews</button>
+              </div>
+          </div>
+      
+          <div class="alumni-box">
+              <div class="alumni-info">
+                  <div class="alumni-row">
+                      <img src="image/alumni 3.jpeg" alt="Alumni Photo 4">
+                      <p class="alumni-quote">"Inilah tempat di mana mimpi-mimpi menjadi kenyataan."</p>
+                  </div>
+                  <button class="view-all-btn">View All Alumni Reviews</button>
+              </div>
+          </div>
+      </div>
+
+      
+      
+          
+          </div>
+          
+           
+</div>
+        </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+          <div class="contact-info">
+              <p>&copy; Institut Teknologi Del</p>
+              <p>Jl. Sisingamangaraja,</p>
+              <p>SitoluamaLaguboti, Toba SamosirSumatera Utara, IndonesiaKode Pos: 22381</p>
+              <p>Telp: +62 632 331234</p>
+              <p>Fax: +62 632 331116</p>
+              <p>Website: <a href="http://www.del.ac.id" target="_blank">www.del.ac.id</a></p>
+              <p>Email: <a href="mailto:info@del.ac.id">info@del.ac.id</a></p>
+              <p>Karir: <a href="mailto:karir@del.ac.id">karir@del.ac.id</a></p>
+          </div>
+          <div class="social-media">
+              <p>LATEST TWEETS</p>
+              <p>FIND US ON</p><br>
+              <a href="https://web.facebook.com/Institut.Teknologi.Del" target="_blank"><i class="fab fa-facebook"></i> Facebook</a><br>
+              <a href="https://www.instagram.com/it.del/" target="_blank"><i class="fab fa-twitter"></i> Twitter</a><br>
+              <a href="https://www.instagram.com/it.del/" target="_blank"><i class="fab fa-whatsapp"></i> whatsapp</a><br>
+              <a href="https://www.instagram.com/it.del/" target="_blank"><i class="fab fa-youtube"></i> Youtube</a><br>
+              <a href="https://www.instagram.com/it.del/" target="_blank"><i class="fab fa-linkedin"></i> Linkedin</a><br>
+          </div>
+      </div>
+      <div class="logo-container">
+          <img src="image/itb.png" alt="Logo 1">
+          <img src="image/sud.png" alt="Logo 2">
+          <img src="image/yayasan.png" alt="Logo 3">
+      </div>
+  </footer>
+
+    <script>
+        // JavaScript for carousel movement
+        let currentSlide = 0;
+        const carouselItems = document.querySelectorAll('.carousel-item');
+
+        function showSlide(index) {
+    const newTransformValue = -index * 100 + '%';
+    document.getElementById('myCarousel').style.transform = 'translateX(' + newTransformValue + ')';
+    
+    // Sembunyikan tombol di semua elemen, kecuali elemen yang aktif
+    document.querySelectorAll('.carousel-button').forEach((button, i) => {
+        button.style.display = i === index ? 'block' : 'none';
+    });
+}
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % carouselItems.length;
+            showSlide(currentSlide);
+        }
+
+        setInterval(nextSlide, 3000); // Auto slide every 3 seconds
+
+       
+    function performSearch() {
+        // Get the user input from the search input field
+        var searchQuery = document.getElementById('searchInput').value;
+
+        // Perform the search (replace this with your actual search logic)
+        alert('Performing search for: ' + searchQuery);
+    }
+  </script>
+
+   
+</body>
+
+</html>

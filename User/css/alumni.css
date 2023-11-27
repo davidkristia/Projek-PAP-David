@@ -1,0 +1,61 @@
+.alumni-container {
+    display: flex;
+    flex-wrap: wrap; /* Menambahkan wrap agar item-item flex dapat berada di baris baru */
+    gap: 20px;
+    justify-content: center; /* Menyusun item di tengah */
+}
+
+.alumni-title {
+    text-align: left;
+    margin: 20px 0 10px 20px; 
+}
+
+.alumni-box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+    overflow: hidden;
+    max-width: 400px;
+    width: 100%;
+    border: 2px solid #ccc;
+    margin: 10px; /* Menambahkan margin untuk memberikan jarak antar item */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.alumni-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.alumni-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alumni-info img {
+    width:60%;
+    border-radius: 20%;
+}
+
+.alumni-quote {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+.view-all-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 0 0 10px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Menambahkan transform pada hover */
+}
+
+.view-all-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05); /* Membuat efek scaling saat tombol di hover */
+}

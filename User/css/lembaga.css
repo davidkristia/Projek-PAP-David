@@ -1,0 +1,38 @@
+/* Style for lembaga-info and mitra-info */
+.lembaga-info,
+.mitra-info {
+  display: flex;
+  align-items: flex-start; /* Updated to align items at the top */
+  text-align: left;
+  margin: 20px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* Style for lembaga-image in lembaga-info and mitra-info */
+.lembaga-info img,
+.mitra-info img {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+}
+
+/* Style for the text content in lembaga-info and mitra-info */
+.lembaga-info h2,
+.mitra-info h2 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+/* Style for the description text in lembaga-info and mitra-info */
+.info-description {
+  margin: 10px 0;
+  line-height: 1.4;
+}
+
+/* Hover effect for lembaga-info and mitra-info */
+.lembaga-info:hover,
+.mitra-info:hover {
+  background-color: #f0f0f0;
+}
