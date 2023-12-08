@@ -562,10 +562,10 @@ h6 {
     font-family: "Poppins", sans-serif;
   }
   
-  .section-title h2::after {
+  .section-title h3::after {
     content: "";
     width: 120px;
-    height: 1px;
+    height: px;
     display: inline-block;
     background: #B20600;
     margin: 4px 10px;

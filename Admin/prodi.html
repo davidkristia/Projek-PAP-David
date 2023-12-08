@@ -31,7 +31,7 @@
 
         <!-- CSS Utama -->
         <link href="assets/css/style.css" rel="stylesheet">
-
+        <link href="assets/css/prodi.css" rel="stylesheet">
         <style type="text/css">
             /*--------------------------------------------------------------
             # Display Rate Ulasan
@@ -140,7 +140,7 @@ Admin
         <header id="header" class="fixed-top">
             <div class="container d-flex align-items-center">
                 <button class="toggle mx-4" id="toggle">
-                        <span><a ><i class="fas fa-bars" style="color: #000000;"></i></span>
+                        <span><a ><i class="fas fa-bars" style="color: #ffffff;"></i></span>
                 </button>
                 <a href="Dashboard.html" class="logo">
                     <img src="assets/img/ITDEL.png" alt="" class="img-fluid">
@@ -169,46 +169,78 @@ Admin
                 <li><a href="prodi.html"><i class=" fas fa-laptop-code mx-2"></i> Program Pendidikan</a></li>
                 <li><a href="fasilitas.html"><i class="fas fa-suitcase mx-2"></i> Fasilitas</a></li>
                 <li><a href="lembaga.html"><i class="fas fa-award mx-2"></i> Lembaga</a></li>
+                <li><a href="#"><i class="fas fa-user mx-2"></i> Akun</a></li>
+                <li><a href="#"><i class="fas fa-sign-out-alt mx-2"></i> Log Out</a></li>
             </ul>
         </div>
-
+<div></div>
         <div class="content mb-5">
             <div class="container-lg my-5">
-                <div class="about-itdel">
-                    <h2 class="mb-4">Selamat Datang di Institut Teknologi Del</h2>
-                    <p>
-                        Institut Teknologi Del (IT DEL) adalah lembaga pendidikan tinggi di Indonesia yang fokus pada teknologi dan ilmu komputer. Kami berkomitmen untuk memberikan pendidikan berkualitas dan mencetak lulusan yang siap bersaing di dunia industri teknologi informasi.
-                    </p>
-                    <img src="assets/img/rektorat.jpg" alt="Foto Kampus IT DEL" class="img-fluid mt-4">
-                </div>
-        
-                <div class="product-stats my-5">
-                    <div class="current-time">
-                        <h1><p>Senin, 27 November 2023 09:06</p></h1>
-                        <br>
+                <div class="header">
+                    <h1>Program Pendidikan - Admin IT Del</h1>
+                    <a href="#" class="btn">Tambah Fakultas</a>
+                  </div>
+                
+                  <div class="container">
+                    <!-- Fakultas Vokasi -->
+                    <div class="card">
+                      <h3>Fakultas Vokasi</h3>
+                      <p>Program Studi:</p>
+                      <ul>
+                        <li>D3 Teknologi Informasi</li>
+                        <li>D3 Teknik Komputer</li>
+                        <li>D4 Teknik Rekayasa Perangkat Lunak</li>
+                      </ul>
+                      <div class="button-container">
+                        <a href="fakultasvokasi.html" class="edit-btn">Edit</a>
+                        <button class="delete-btn">Hapus</button>
+                      </div>
                     </div>
-        
-                    <div class="row" style="max-width: 800px;">
-                        <div class="col-sm-4 col-12 d-flex">
-                            <div class="icon-box mt-4 mt-xl-0 border w-100 border-dark border-4 p-4">
-                                <center><i class="fas fa-book fa-2xl"></i></center>
-                                <h4 class="mt-4">Program Studi:</h4>
-                                <center><h4><li>D3 TI</li><li>D3 TK</li><li>D4 TRPL</li><li>S1 IF</li><li>S1 SI</li><li>S1 TE</li><li>S1 MR TRPL</li><li>S1 METAL</li><li>S1 BP</li>.</h4></center>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 col-12 d-flex">
-                            <div class="icon-box mt-4 mt-xl-0 border w-100 border-dark border-4 p-4">
-                                <center><i class="fas fa-user-graduate fa-2xl"></i></center>
-                                <h4 class="mt-4">Jumlah Mahasiswa:</h4>
-                                <center><h4>3000+</h4></center>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 col-12 d-flex">
-                            <div class="icon-box mt-4 mt-xl-0 border w-100 border-dark border-4 p-4">
-                                <center><i class="fas fa-chalkboard-teacher fa-2xl"></i></center>
-                                <h4 class="mt-4">Jumlah Dosen:</h4>
-                                <center><h4>200+</h4></center>
-                            </div>
+                
+                    <!-- Fakultas FITE -->
+                    <div class="card">
+                      <h3>Fakultas FITE</h3>
+                      <p>Program Studi:</p>
+                      <ul>
+                        <li>S1 Informatika</li>
+                        <li>S1 Sistem Informasi</li>
+                        <li>S1 Teknik Elektro</li>
+                      </ul>
+                      <div class="button-container">
+                        <a href="fakultasfite.html" class="edit-btn">Edit</a>
+                        <button class="delete-btn">Hapus</button>
+                      </div>
+                    </div>
+                    <!-- Fakultas FTI -->
+                    <div class="card">
+                      <h3>Fakultas FTI</h3>
+                      <p>Program Studi:</p>
+                      <ul>
+                        <li>S1 Manajemen Rekayasa</li>
+                        <li>S1 Metalurgi</li>
+                      </ul>
+                      <div class="button-container">
+                        <a href="fakultasfti.html" class="edit-btn">Edit</a>
+                        <button class="delete-btn">Hapus</button>
+                      </div>
+                    </div>
+                
+                    <!-- Fakultas FTB -->
+                    <div class="card">
+                      <h3>Fakultas FTB</h3>
+                      <p>Program Studi:</p>
+                      <ul>
+                        <li>S1 Teknik Bioproses</li>
+                      </ul>
+                      <div class="button-container">
+                        <a href="ftb.html" class="edit-btn">Edit</a>
+                        <button class="delete-btn">Hapus</button>
+                      </div>
+                    </div>
+
+                    </div>
+                  </div>
+                
                         </div>
                     </div>
                 </div>

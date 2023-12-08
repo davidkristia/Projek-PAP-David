@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html>
     <head>
         <title>Dashboard</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link href="assets/img/TaboTobaLogo.png" rel="icon">
+        <link href="assets/img/ITDEL.png" rel="icon">
         
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
@@ -31,24 +30,9 @@
 
         <!-- CSS Utama -->
         <link href="assets/css/style.css" rel="stylesheet">
-        <link href="assets/css/fasilitas.css" rel="stylesheet">
+        <link href="assets/css/fakultas.css" rel="stylesheet">
 
         <style type="text/css">
-            /*--------------------------------------------------------------
-            # Display Rate Ulasan
-            --------------------------------------------------------------*/
-            input[type="radio"] {
-            display: none;
-            }
-
-            input[type="radio"] + label:before {
-            content: "★";
-            display: inline-block;
-            margin-right: 5px;
-            font-size: 30px;
-            color: rgb(255, 217, 0);
-            }
-
         </style>
 
     </head>
@@ -101,13 +85,11 @@ Admin
             list-style: none;
             padding: 0;
             margin: 0;
-            
         }
 
         .sidebar ul li {
             padding: 10px 0;
             border-bottom: 1px solid #e9ecef;
-          
         }
 
         .sidebar ul li a {
@@ -131,12 +113,8 @@ Admin
             justify-content:center;
             margin-top: 20px;
         }
-        
-        
 
         </style>
-
-        
 
     </head>
     <body>
@@ -147,7 +125,7 @@ Admin
                 </button>
                 <a href="Dashboard.html" class="logo">
                     <img src="assets/img/ITDEL.png" alt="" class="img-fluid">
-                    <h1 class="logo ms-4"><a href="index.php">INSTITUT TEKNOLOGI DEL</a></h1><br> </br>
+                    <h1 class="logo ms-4"><a href="Dashboard.html">INSTITUT TEKNOLOGI DEL</a></h1><br> </br>
                     <div></div>
                     <p style="color: white; margin-left: 50px; margin-top: 10px;">Martuhan, Marroha, Marbisuk</p>
                
@@ -177,143 +155,23 @@ Admin
             </ul>
         </div>
 
-        <section id="product" class="product">
-            <div class="container" data-aos="fade-up"  >
-                <div class="section-title">
-                <div style=" display:flex;">
-          <div>
-            <br>
-            <br>
-          <p> FASILITAS</p>
-          <a class="btn btn-primary my-3" href="edit fasilitas.html" role="button">+ &nbspTambah Fasilitas Baru</a>
 
-          </div>
+          <!-- Fakultas FTI -->
+          <div class="faculty-container">
+            <h1>Fakultas Teknologi Industri (FTI)</h1>
+            <div class="program-container">
+                <div class="program-card">
+                    <img src="image/mr.jpg" alt="S1 Manajemen Rekayasa">
+                    <h3>S1 Manajemen Rekayasa</h3>
+                    <p>Manajemen Rekayasa (Engineering Management) adalah penggabungan dari keilmuan teknik/rekayasa (engineering) dengan ilmu manajemen yang diaplikasikan untuk menyelesaikan persoalan-persoalan dalam suatu sistem kompleks.  Aspek keilmuan teknik (engineering) dari Manajemen Rekayasa terlihat melalui  penerapan matematika dan ilmu pengetahuan alam yang diperoleh melalui pembelajaran, pengalaman, dan praktek empiris untuk menemukan cara-cara yang optimal dalam memanfaatkan material dan sumber daya lain dalam mengembangkan teknologi. Aspek keilmuan manajemen dari Manajemen Rekayasa muncul dalam penerapan ilmu-ilmu pendukung keputusan yang dapat diaplikasikan dalam aktivitas-aktivitas pengembangan organisasi dalam mencapai tujuannya, yang diperoleh melalui pembelajaran dan praktek empiris dalam ilmu perilaku organisasi, analisa finansial, manajemen sumber daya manusia, dan analisa keputusan.</p>
                 </div>
-
-        <div class="content">
-            <div class="facility-card">
-                <img src="assets/img/kantinmakan.jpg" alt="Kantin">
-                <h2>Kantin</h2>
-                <p>Tempat makan mahasiswa dengan berbagai pilihan makanan dan minuman.</p>  
-                <div class="button-container">
-                    <a href="edit fasilitas.html" class="edit-button btn btn-primary">
-                        <i class="fas fa-pencil-alt"></i> Edit
-                    </a>
-                </div>
-            </div>
-    
-            <div class="facility-card">
-                <img src="assets/img/koper.jpg" alt="Koperasi">
-                <h2>Koperasi</h2>
-                <p>Tempat untuk membeli keperluan sehari-hari dan perlengkapan studi.</p>
-                <div class="button-container">
-                    <a href="edit fasilitas.html" class="edit-button btn btn-primary">
-                        <i class="fas fa-pencil-alt"></i> Edit
-                    </a>
-                </div>
-            </div>
-    
-            <div class="facility-card">
-                <img src="assets/img/lapangan hijau.jpg" alt="Lapangan Hijau">
-                <h2>Lapangan Hijau</h2>
-                <p>Area terbuka yang nyaman untuk kegiatan olahraga .</p>
-                <div class="button-container">
-                    <a href="edit fasilitas.html" class="edit-button btn btn-primary">
-                        <i class="fas fa-pencil-alt"></i> Edit
-                    </a>
-                </div>
-            </div>
-    
-            <div class="facility-card">
-                <img src="assets/img/ot.jpg" alt="Open Teater">
-                <h2>Open Teater</h2>
-                <p>Ruang terbuka untuk pertunjukan seni .</p>
-                <div class="button-container">
-                    <a href="edit fasilitas.html" class="edit-button btn btn-primary">
-                        <i class="fas fa-pencil-alt"></i> Edit
-                    </a>
-                </div>
-            </div>
-    
-            <div class="facility-card">
-                <img src="assets/img/klinik.jpg" alt="Klinik">
-                <h2>Klinik</h2>
-                <p>Layanan kesehatan bagi mahasiswa.</p>
-                <div class="button-container">
-                    <a href="edit fasilitas.html" class="edit-button btn btn-primary">
-                        <i class="fas fa-pencil-alt"></i> Edit
-                    </a>
-                </div>
-            </div>
-    
-            <div class="facility-card">
-                <img src="assets/img/lab.jpg" alt="Laboratorium">
-                <h2>Laboratorium</h2>
-                <p>Fasilitas untuk praktikum .</p>
-                <div class="button-container">
-                    <a href="edit fasilitas.html" class="edit-button btn btn-primary">
-                        <i class="fas fa-pencil-alt"></i> Edit
-                    </a>
-                </div>
-            </div>
-    
-            <div class="facility-card">
-                <img src="assets/img/gd4.jpg" alt="Ruang Kelas">
-                <h2>Ruang Kelas</h2>
-                <p>Ruang belajar yang nyaman dan dilengkapi dengan teknologi modern.</p>
-                <div class="button-container">
-                    <a href="edit fasilitas.html" class="edit-button btn btn-primary">
-                        <i class="fas fa-pencil-alt"></i> Edit
-                    </a>
+                <div class="program-card">
+                    <img src="image/metal.jpg" alt="S1 Teknik Metalurgi">
+                    <h3>S1 Teknik Metalurgi</h3>
+                    <p>Pendidikan sarjana program studi Teknik Metalurgi dan Material bertujuan untuk menghasilkan Sarjana Teknik (ST) yang memiliki kemampuan dalam menentukan dan merekayasa, memproses pembuatan dan mengendalikan sifat – sifat material logam maupun non logam.</p>
                 </div>
             </div>
         </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <style>
-            .pagination {
-              display: flex;
-              justify-content: center;
-              color: #007bff;
-              margin-top: 20px; /* Sesuaikan margin sesuai kebutuhan Anda */
-            }
-          </style>
-          
-          <style>
-            .pagination {
-              display: flex;
-              justify-content: center;
-              margin-top: 20px; /* Sesuaikan margin sesuai kebutuhan Anda */
-            }
-          
-            .pagination .page-link {
-              color: #007BFF; 
-              background-color: #FFFFFF; 
-              border: 1px solid #007BFF; 
-            }
-          
-            .pagination .page-link:hover {
-              color: #FFFFFF; 
-              background-color: #007BFF; 
-              border: 1px solid #007BFF; 
-            }
-          </style>
-          
-          <nav aria-label="Page navigation example">
-            <ul class="pagination">
-              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item"><a class="page-link" href="#">Next</a></li>
-            </ul>
-          </nav>
-        
-
-
 
         <!-- ======= Footer ======= -->
         <footer>

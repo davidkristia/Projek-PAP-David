@@ -101,13 +101,11 @@ Admin
             list-style: none;
             padding: 0;
             margin: 0;
-            
         }
 
         .sidebar ul li {
             padding: 10px 0;
             border-bottom: 1px solid #e9ecef;
-          
         }
 
         .sidebar ul li a {
@@ -177,102 +175,184 @@ Admin
             </ul>
         </div>
 
-        <section id="product" class="product">
-            <div class="container" data-aos="fade-up"  >
-                <div class="section-title">
-                <div style=" display:flex;">
-          <div>
-            <br>
-            <br>
-          <p> FASILITAS</p>
-          <a class="btn btn-primary my-3" href="edit fasilitas.html" role="button">+ &nbspTambah Fasilitas Baru</a>
-
-          </div>
-                </div>
-
         <div class="content">
-            <div class="facility-card">
-                <img src="assets/img/kantinmakan.jpg" alt="Kantin">
-                <h2>Kantin</h2>
-                <p>Tempat makan mahasiswa dengan berbagai pilihan makanan dan minuman.</p>  
-                <div class="button-container">
-                    <a href="edit fasilitas.html" class="edit-button btn btn-primary">
-                        <i class="fas fa-pencil-alt"></i> Edit
-                    </a>
-                </div>
+            <div class="content">
+                <div class="container-lg mt-5">
+                    <h1>Kelola Fasilitas</h1>
+                <a class="btn btn-primary my-3" href="#" role="button">+ &nbspTambah Fasilitas Baru</a>
+                
+                <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Fasilitas</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th> <!-- Added column for delete button -->
+            </tr>
+        </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">
+                        <img src="assets/img/kantinmakan.jpg" class="img-fluid" width="800" alt="Kantin">                      <td>                        <td>
+                        <p href="edit_produk.php?product_id=77" style="font-size: 25px; color="#fff"; ">
+                            Kantin                        </p>
+                            <p>Tempat makan mahasiswa dengan berbagai pilihan makanan dan minuman.</p>  
+                                                
+                        </td>
+            
+                    <td>
+                        <form method="post" action="hapus_produk_proses.php">
+                            <input type="hidden" name="product_id" value="77">
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('Apakah anda yakin ingin menghapus produk ini?')">Sembunyikan</button>
+                        </form>
+                    </td>
+    
+                    <td>
+                        <a href="edit_produk.php?product_id=77" class="btn btn-primary">Edit</a>
+                    </td>
+                </tr>
+            </tbody>
+                <tbody>
+                <tr>
+                    <th scope="row">
+                        <img src="assets/img/koper.jpg" class="img-fluid" width="800" alt="Kantin">                      <td>                        <td>
+                        <p href="edit_produk.php?product_id=76" style="font-size: 25px; color="#fff"; ">
+                            Koperasi                        </p>
+                            <p>Tempat untuk membeli keperluan sehari-hari dan perlengkapan studi.</p>
+                                                
+                        </td>
+            
+                    <td>
+                        <form method="post" action="hapus_produk_proses.php">
+                            <input type="hidden" name="product_id" value="76">
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('Apakah anda yakin ingin menghapus Fasilitas  ini?')">Sembunyikan</button>
+                        </form>
+                    </td>
+    
+                    <td>
+                        <a href="edit_produk.php?product_id=76" class="btn btn-primary">Edit</a>
+                    </td>
+                </tr>
+            </tbody>
+                <tbody>
+                <tr>
+                    <th scope="row">
+                        <img src="assets/img/lapangan hijau.jpg" class="img-fluid" width="800" alt="Kantin">                      <td>                        <td>
+                        <p href="edit_produk.php?product_id=75" style="font-size: 25px; color="#fff"; ">
+                            Lapangan Hijau                        </p>
+                            <p>Area terbuka yang nyaman untuk kegiatan olahraga .</p>
+                                                
+                        </td>
+            
+                    <td>
+                        <form method="post" action="hapus_produk_proses.php">
+                            <input type="hidden" name="product_id" value="75">
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('Apakah anda yakin ingin menghapus produk ini?')">Sembunyikan</button>
+                        </form>
+                    </td>
+    
+                    <td>
+                        <a href="edit_produk.php?product_id=75" class="btn btn-primary">Edit</a>
+                    </td>
+                </tr>
+            </tbody>
+                <tbody>
+                <tr>
+                    <th scope="row">
+                        <img src="assets/img/ot.jpg" class="img-fluid" width="800" alt="Kantin">                      <td>                        <td>
+                        <p href="edit_produk.php?product_id=74" style="font-size: 25px; color="#fff"; ">
+                            Open Teater                        </p>
+                            <p>Ruang terbuka untuk pertunjukan seni .</p>
+                                                
+                        </td>
+            
+                    <td>
+                        <form method="post" action="hapus_produk_proses.php">
+                            <input type="hidden" name="product_id" value="74">
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('Apakah anda yakin ingin menghapus produk ini?')">Sembunyikan</button>
+                        </form>
+                    </td>
+    
+                    <td>
+                        <a href="edit_produk.php?product_id=74" class="btn btn-primary">Edit</a>
+                    </td>
+                </tr>
+            </tbody>
+                <tbody>
+                <tr>
+                    <th scope="row">
+                        <img src="assets/img/klinik.jpg" class="img-fluid" width="800" alt="Kantin">                      <td>                        <td>
+                        <p href="edit_produk.php?product_id=73" style="font-size: 25px; color="#fff"; ">
+                            Klinik
+                        </p>
+                        <p>Menyediakan Layanan kesehatan bagi mahasiswa dengan tenaga medis yang berpengalaman.</p>
+                                                
+                        </td>
+            
+                    <td>
+                        <form method="post" action="hapus_produk_proses.php">
+                            <input type="hidden" name="product_id" value="73">
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('Apakah anda yakin ingin menghapus produk ini?')">Sembunyikan</button>
+                        </form>
+                    </td>
+    
+                    <td>
+                        <a href="edit_produk.php?product_id=73" class="btn btn-primary">Edit</a>
+                    </td>
+                </tr>
+            </tbody>
+                <tbody>
+                <tr>
+                    <th scope="row">
+                        <img src="assets/img/lab.jpg" class="img-fluid" width="800" alt="Kantin">                      <td>                        <td>
+                        <p href="edit_produk.php?product_id=72" style="font-size: 25px; color="#fff"; ">
+                            Laboratorium                        </p>
+                            Fasilitas untuk praktikum mahasiswa tiap program studi .                                                
+                        </td>
+            
+                    <td>
+                        <form method="post" action="hapus_produk_proses.php">
+                            <input type="hidden" name="product_id" value="72">
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('Apakah anda yakin ingin menghapus produk ini?')">Sembunyikan</button>
+                        </form>
+                    </td>
+    
+                    <td>
+                        <a href="edit_produk.php?product_id=72" class="btn btn-primary">Edit</a>
+                    </td>
+                </tr>
+            </tbody>
+                <tbody>
+                <tr>
+                    <th scope="row">
+                        <img src="assets/img/gd4.jpg" class="img-fluid" width="800" alt="Kantin">                      <td>                        <td>
+                        <p href="edit_produk.php?product_id=71" style="font-size: 25px; color="#fff"; ">
+                            Ruang Kelas 
+                        </p>
+                        <p>Ruang belajar yang nyaman dan dilengkapi dengan teknologi modern.</p>
+                                                
+                        </td>
+                        <td>
+                            <form method="post" action="hapus_produk_proses.php">
+                                <input type="hidden" name="product_id" value="77">
+                                <button type="submit" class="btn btn-danger" onclick="return confirm('Apakah anda yakin ingin menghapus produk ini?')">Sembunyikan</button>
+                            </form>
+                        </td>
+        
+                        <td>
+                            <a href="edit_produk.php?product_id=77" class="btn btn-primary">Edit</a>
+                        </td>
+                    </tr>
+                </tbody>
+            
+                    
+                </tr>
+            </tbody>
+        </table>
+    
+                </div>                   
             </div>
     
-            <div class="facility-card">
-                <img src="assets/img/koper.jpg" alt="Koperasi">
-                <h2>Koperasi</h2>
-                <p>Tempat untuk membeli keperluan sehari-hari dan perlengkapan studi.</p>
-                <div class="button-container">
-                    <a href="edit fasilitas.html" class="edit-button btn btn-primary">
-                        <i class="fas fa-pencil-alt"></i> Edit
-                    </a>
-                </div>
-            </div>
-    
-            <div class="facility-card">
-                <img src="assets/img/lapangan hijau.jpg" alt="Lapangan Hijau">
-                <h2>Lapangan Hijau</h2>
-                <p>Area terbuka yang nyaman untuk kegiatan olahraga .</p>
-                <div class="button-container">
-                    <a href="edit fasilitas.html" class="edit-button btn btn-primary">
-                        <i class="fas fa-pencil-alt"></i> Edit
-                    </a>
-                </div>
-            </div>
-    
-            <div class="facility-card">
-                <img src="assets/img/ot.jpg" alt="Open Teater">
-                <h2>Open Teater</h2>
-                <p>Ruang terbuka untuk pertunjukan seni .</p>
-                <div class="button-container">
-                    <a href="edit fasilitas.html" class="edit-button btn btn-primary">
-                        <i class="fas fa-pencil-alt"></i> Edit
-                    </a>
-                </div>
-            </div>
-    
-            <div class="facility-card">
-                <img src="assets/img/klinik.jpg" alt="Klinik">
-                <h2>Klinik</h2>
-                <p>Layanan kesehatan bagi mahasiswa.</p>
-                <div class="button-container">
-                    <a href="edit fasilitas.html" class="edit-button btn btn-primary">
-                        <i class="fas fa-pencil-alt"></i> Edit
-                    </a>
-                </div>
-            </div>
-    
-            <div class="facility-card">
-                <img src="assets/img/lab.jpg" alt="Laboratorium">
-                <h2>Laboratorium</h2>
-                <p>Fasilitas untuk praktikum .</p>
-                <div class="button-container">
-                    <a href="edit fasilitas.html" class="edit-button btn btn-primary">
-                        <i class="fas fa-pencil-alt"></i> Edit
-                    </a>
-                </div>
-            </div>
-    
-            <div class="facility-card">
-                <img src="assets/img/gd4.jpg" alt="Ruang Kelas">
-                <h2>Ruang Kelas</h2>
-                <p>Ruang belajar yang nyaman dan dilengkapi dengan teknologi modern.</p>
-                <div class="button-container">
-                    <a href="edit fasilitas.html" class="edit-button btn btn-primary">
-                        <i class="fas fa-pencil-alt"></i> Edit
-                    </a>
-                </div>
-            </div>
-        </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <style>
             .pagination {
               display: flex;

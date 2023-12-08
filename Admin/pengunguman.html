@@ -19,6 +19,7 @@
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
 
         <!-- CSS Files -->
         <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -128,6 +129,56 @@ Admin
             justify-content:center;
             margin-top: 20px;
         }
+
+        .announcement-box {
+            background-color: #0477BF;
+            color: #000000;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #f5c6cb;
+            border-radius: 25px;
+        }
+
+        .announcement-box1 {
+            background-color: #37deaf;
+            color: #000000;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #f5c6cb;
+            border-radius: 35px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .manage-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .announcement-box {
+        position: relative;
+    }
+
+    .manage-button {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+    .announcement-box img {
+        max-width: 60%; /* Set the maximum width of the image to 100% of its container */
+        height: auto;
+        border-radius: 45px;
+    }
+    
         
         
 
@@ -140,7 +191,7 @@ Admin
         <header id="header" class="fixed-top">
             <div class="container d-flex align-items-center">
                 <button class="toggle mx-4" id="toggle">
-                        <span><a ><i class="fas fa-bars" style="color: #000000;"></i></span>
+                        <span><a ><i class="fas fa-bars" style="color: #ffffff;"></i></span>
                 </button>
                 <a href="Dashboard.html" class="logo">
                     <img src="assets/img/ITDEL.png" alt="" class="img-fluid">
@@ -169,51 +220,142 @@ Admin
                 <li><a href="prodi.html"><i class=" fas fa-laptop-code mx-2"></i> Program Pendidikan</a></li>
                 <li><a href="fasilitas.html"><i class="fas fa-suitcase mx-2"></i> Fasilitas</a></li>
                 <li><a href="lembaga.html"><i class="fas fa-award mx-2"></i> Lembaga</a></li>
+                <li><a href="#"><i class="fas fa-user mx-2"></i> Akun</a></li>
+                <li><a href="#"><i class="fas fa-sign-out-alt mx-2"></i> Log Out</a></li>
             </ul>
         </div>
 
         <div class="content mb-5">
             <div class="container-lg my-5">
-                <div class="about-itdel">
-                    <h2 class="mb-4">Selamat Datang di Institut Teknologi Del</h2>
-                    <p>
-                        Institut Teknologi Del (IT DEL) adalah lembaga pendidikan tinggi di Indonesia yang fokus pada teknologi dan ilmu komputer. Kami berkomitmen untuk memberikan pendidikan berkualitas dan mencetak lulusan yang siap bersaing di dunia industri teknologi informasi.
-                    </p>
-                    <img src="assets/img/rektorat.jpg" alt="Foto Kampus IT DEL" class="img-fluid mt-4">
+                <!-- Admin Page Content -->
+                <h2><b>PENGUNGUMAN</b></h2>
+                <button class="manage-button" onclick="openManagePage()">Kelola Pengunguman</button>
+     
+
+        <div class="content mb-5">
+            <div class="container-lg my-5">
+                <!-- Announcement Box -->
+                <div class="announcement-box1">
+                    <h4><i class="fas fa-plus"></i> Buat Pengumuman</h4>
+                    <p>berisi tentang sesuatu yang terjadi di del baik yang sudah lampau atau baru baru ini.</p>
                 </div>
-        
-                <div class="product-stats my-5">
-                    <div class="current-time">
-                        <h1><p>Senin, 27 November 2023 09:06</p></h1>
-                        <br>
+                            </div>
+                        </div>
+                        <div class="announcement-box">
+                            <a href="#" class="manage-button">
+                                <i class="fas fa-pencil-alt"></i> Kelola
+                            </a>
+                            <img src="assets/img/rektorat.jpg" alt="Announcement Image">
+                            <div class="announcement-text">
+                                <h3>IT Del Berhasil Meraih Akreditasi Institusi Peringkat B untuk Periode 2023-2028 Melalui PEPA</h3>
+                                <p>Pada tanggal 10 Mei 2023, IT Del mendapatkan kabar baik tentang hasil Penghitungan Pemantauan dan Evaluasi Peringkat Akreditasi (PEPA)  Institusi. Melalui keputusan BAN-PT Nomor 1855/BAN-PT/PMT2/2023 yang ditujukan kepada Dr. Arnaldo Marulitua Sinaga, ST., M.InfoTech. (Rektor IT Del), IT Del dinyatakan LOLOS PEPA. Dengan demikian, peringkat akreditasi IT Del (B) diperpanjang selama 5 tahun ke depan ( 2023 s.d. 2028).
+                                    Sejak Desember tahun 2022, peringkat akreditasi IT Del telah dipantau oleh BAN PT (Badan Akreditasi Nasional Perguruan Tinggi) karena akan berakhir pada tanggal 18 Desember 2023. Pemantauan dimaksud disebut dengan istilah Pemantauan dan Evaluasi Peringkat Akreditasi (PEPA). Untuk dapat lolos PEPA, IT Del harus memenuhi 9 dari 10 indikator syarat Perlu PEPA (indikator-indikator terkait dengan Kemahasiswaan, SDM-Dosen, dan Akreditasi Prodi).</p>
+                                <a href="#" class="read-more-link">Read More</a>
+                            </div>
+                        </div>
+                
+                        <div class="announcement-box">
+                            <a href="#" class="manage-button">
+                                <i class="fas fa-pencil-alt"></i> Kelola
+                            </a>
+                            <img src="assets/img/rektorat.jpg" alt="Announcement Image">
+                            <div class="announcement-text">
+                                <h3>Sampling Kemenyan Toba di Kabupaten Tapanuli Utara, Kabupaten Humbang Hasundutan, dan Kabupaten Pakpak Bharat</h3>
+                                <p>Tim Institut Teknologi Del yang terdiri atas Ymelda A. C. Manurung, M.Sc. (Peneliti Genomik Herbal KHDTK IT Del), Roga Florida Kembaren, M.Si. (Dosen Teknik Bioproses IT Del) dan Darwin Silalahi, M.P. (Peneliti Genomik Hortikultura KHDTK IT Del) melakukan pengambilan sampel daun kemenyan sebagai bagian dari kegiatan penelitian “Pengungkapan Biodiversitas dan Mekanisme Genetik Biosintesis Senyawa Terapeutik Tanaman Kemenyan Menggunakan Analisis Genom” inisiasi kerjasama dengan Badan Riset Inovasi Nasional (BRIN), selama 5 hari (13 – 17 November 2023).</p>
+                                <a href="#" class="read-more-link">Read More</a>
+                            </div>
+                        </div>
+                
+                        <div class="announcement-box">
+                            <a href="#" class="manage-button">
+                                <i class="fas fa-pencil-alt"></i> Kelola
+                            </a>
+                            <img src="assets/img/rektorat.jpg" alt="Announcement Image">
+                            <div class="announcement-text">
+                                <h3>IT Del Ikuti Kegiatan KMI EXPO XIV di Bali Hingga Terima Penghargaan Pendamping Terbaik</h3>
+                                <p>Pada tanggal 15-17 November 2023, Institut Teknologi Del turut serta mengikuti kegiatan kompetisi KMI EXPO XIV 2023 yang diselenggarakan oleh Belmawa di Universitas Pendidikan Ganesha, Singaraja Bali.
+                
+                                    KMI EXPO merupakan suatu wadah bagi mahasiswa untuk memperkenalkan bidang usaha yang dapat meningkatkan perkembangan aktivitas kewirausahaan serta ajang kompetisi yang diikuti oleh kelompok usaha yang masuk pada KMI Award sebagai kategori produk utama yang akan dipamerkan pada ajang KMI EXPO XIV 2023.</p>
+                                <a href="#" class="read-more-link">Read More</a>
+                            </div>
+                        </div>
+                
+                        <div class="announcement-box">
+                            <a href="#" class="manage-button">
+                                <i class="fas fa-pencil-alt"></i> Kelola
+                            </a>
+                            <img src="assets/img/rektorat.jpg" alt="Announcement Image">
+                            <div class="announcement-text">
+                                <h3>Bapak Gibran Rakabuming Raka Beri Kuliah Umum kepada Mahasiswa IT Del terkait “Pemimpin Milenial”</h3>
+                                <p>Pada Hari Sabtu, 18 November 2023 Institut Teknologi Del menerima kunjungan Bapak Gibran Rakabuming Raka, sekaligus menjadi pembicara pada Kuliah Umum dengan topik “Pemimpin Milenial” kepada Mahasiswa/i Institut Teknologi Del.
+                
+                                    Kunjungan ini disambut baik oleh Bapak Dr. Arnaldo Marulitua Sinaga, ST., M.InfoTech. (Rektor IT Del), Bapak dan Ibu Wakil Rektor dan Dosen IT Del dan mahasiswa/i IT Del juga siswa SMA Unggul Del. Dalam kunjungan ini turut hadir Ibu Selvi Ananda, dan Bapak Bobby Nasution (Wali Kota Medan).</p>
+                                <a href="#" class="read-more-link">Read More</a>
+                            </div>
+                        </div>
+                
+                        <div class="announcement-box">
+                            <a href="#" class="manage-button">
+                                <i class="fas fa-pencil-alt"></i> Kelola
+                            </a>
+                            <img src="assets/img/rektorat.jpg" alt="Announcement Image">
+                            <div class="announcement-text">
+                                <h3>Rapat Koordinasi Keluarga Mahasiswa Organisasi IT Del Periode 2023/2024</h3>
+                                <p>Pada Hari Jumat, 27 Oktober 2023 diadakan Rapat Koordinasi KM-IT Del Periode 2023/2024 yang dihadiri oleh Bapak Dr. Arnaldo Marulitua Sinaga, ST., M.InfoTech. (Rektor IT Del), Ibu Mariana Simanjuntak, S.S., M.Sc (Direktur Pendidikan IT Del), juga Bapak dan Ibu Unit Kemahasiswaan. Rapat koordinasi ini dilakukan dengan tujuan untuk meningkatkan komunikasi antar anggota tim atau departemen dalam melakukan tugas dan tanggungjawab. Dalam setiap kegiatan dan koordinasi diharapkan untuk saling kolaborasi untuk mencapai tujuan bersama serta mencari ide-ide dan solusi terbaik.</p>
+                                <a href="#" class="read-more-link">Read More</a>
+                            </div>
+                        </div>
                     </div>
-        
-                    <div class="row" style="max-width: 800px;">
-                        <div class="col-sm-4 col-12 d-flex">
-                            <div class="icon-box mt-4 mt-xl-0 border w-100 border-dark border-4 p-4">
-                                <center><i class="fas fa-book fa-2xl"></i></center>
-                                <h4 class="mt-4">Program Studi:</h4>
-                                <center><h4><li>D3 TI</li><li>D3 TK</li><li>D4 TRPL</li><li>S1 IF</li><li>S1 SI</li><li>S1 TE</li><li>S1 MR TRPL</li><li>S1 METAL</li><li>S1 BP</li>.</h4></center>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 col-12 d-flex">
-                            <div class="icon-box mt-4 mt-xl-0 border w-100 border-dark border-4 p-4">
-                                <center><i class="fas fa-user-graduate fa-2xl"></i></center>
-                                <h4 class="mt-4">Jumlah Mahasiswa:</h4>
-                                <center><h4>3000+</h4></center>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 col-12 d-flex">
-                            <div class="icon-box mt-4 mt-xl-0 border w-100 border-dark border-4 p-4">
-                                <center><i class="fas fa-chalkboard-teacher fa-2xl"></i></center>
-                                <h4 class="mt-4">Jumlah Dosen:</h4>
-                                <center><h4>200+</h4></center>
-                            </div>
+                    
+                </div>
+            </div>
+        </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <style>
+            .pagination {
+              display: flex;
+              justify-content: center;
+              color: #007bff;
+              margin-top: 20px; /* Sesuaikan margin sesuai kebutuhan Anda */
+            }
+          </style>
+          
+          <style>
+            .pagination {
+              display: flex;
+              justify-content: center;
+              margin-top: 20px; /* Sesuaikan margin sesuai kebutuhan Anda */
+            }
+          
+            .pagination .page-link {
+              color: #007BFF; 
+              background-color: #FFFFFF; 
+              border: 1px solid #007BFF; 
+            }
+          
+            .pagination .page-link:hover {
+              color: #FFFFFF; 
+              background-color: #007BFF; 
+              border: 1px solid #007BFF; 
+            }
+          </style>
+          
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+          
+          
         
 
 
@@ -262,6 +404,12 @@ Admin
                     document.getElementById('sidebar').classList.remove('sidebarshow');
                     btnst = true;
                 }
+            }
+        </script>
+        <script>
+            function openManagePage() {
+                // Add your logic to open the manage announcements page
+                alert('Kelola Pengunguman');
             }
         </script>
 
